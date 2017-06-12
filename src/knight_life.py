@@ -33,5 +33,7 @@ class LifeGame(object):
 if __name__ == '__main__':
     lg = LifeGame(40)
     fig = plt.figure()
-    ani = animation.FuncAnimation(fig, lg.animate, interval=50)
-    plt.show()
+    ani = animation.FuncAnimation(fig, lg.animate, interval=20, frames=200)
+    Writer = animation.writers['ffmpeg']
+    writer = Writer(fps=15, metadata=dict(artist='Me'), bitrate=1800)
+    ani.save('work/knight_life.mp4', writer=writer)
