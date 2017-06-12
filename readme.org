@@ -9,4 +9,4 @@ pythonによるものと、Cによるもの。
 - ナイトの移動先を近傍とした実装
 - 行列演算による近傍のカウント(pythonによる実装)
 * 例
-[[file:work/knight_life.mp4]]
+[[file:work/knight_life.gif]]
